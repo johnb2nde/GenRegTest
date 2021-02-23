@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 09 19:04:28 IST 2021</td>
+<td>Started on:</td><td>Tue Feb 23 18:17:06 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10468 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14339 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,134 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I am scenariou B", "Optional[Testing the transfer scenarious]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;SATYAM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SATYA~1.SAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff944f10b68102eecbdfcb3abceb97fd
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Log In&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy34.click(Unknown Source)
+	at Utility.Util.click(Util.java:45)
+	at Pages.PreLoginPage.clickOnLoginButton(PreLoginPage.java:20)
+	at stepDef.StepDef.i_want_to_write_a_step_with_precondition(StepDef.java:14)
+	at ?.I want to write a step with precondition(file:///C:/Users/satya.SATYAM/eclipse-workspaceYoutube/CucumberTestNG/src/test/resources/Feature/test.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1663271865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663271865'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;SATYAM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SATYA~1.SAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff944f10b68102eecbdfcb3abceb97fd
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Log In&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy34.click(Unknown Source)
+	at Utility.Util.click(Util.java:45)
+	at Pages.PreLoginPage.clickOnLoginButton(PreLoginPage.java:20)
+	at stepDef.StepDef.i_want_to_write_a_step_with_precondition(StepDef.java:14)
+	at ?.I want to write a step with precondition(file:///C:/Users/satya.SATYAM/eclipse-workspaceYoutube/CucumberTestNG/src/test/resources/Feature/test.feature:15)
+</pre></div></td>
+<td>0</td>
+<td>Runner.Runner@729d991e</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I am scenariou C", "Optional[Testing the transfer scenarious]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;SATYAM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SATYA~1.SAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff944f10b68102eecbdfcb3abceb97fd
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Log In&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy34.click(Unknown Source)
+	at Utility.Util.click(Util.java:45)
+	at Pages.PreLoginPage.clickOnLoginButton(PreLoginPage.java:20)
+	at stepDef.StepDef.i_want_to_write_a_step_with_precondition(StepDef.java:14)
+	at ?.I want to write a step with precondition(file:///C:/Users/satya.SATYAM/eclipse-workspaceYoutube/CucumberTestNG/src/test/resources/Feature/test.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1381386227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381386227'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;SATYAM&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.150, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\SATYA~1.SAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60951}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff944f10b68102eecbdfcb3abceb97fd
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Log In&apos;)]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy34.click(Unknown Source)
+	at Utility.Util.click(Util.java:45)
+	at Pages.PreLoginPage.clickOnLoginButton(PreLoginPage.java:20)
+	at stepDef.StepDef.i_want_to_write_a_step_with_precondition(StepDef.java:14)
+	at ?.I want to write a step with precondition(file:///C:/Users/satya.SATYAM/eclipse-workspaceYoutube/CucumberTestNG/src/test/resources/Feature/test.feature:24)
+</pre></div></td>
+<td>0</td>
+<td>Runner.Runner@729d991e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,18 +205,8 @@ function toggleAllBoxes() {
 <tr>
 <td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I am scenariou A", "Optional[Testing the transfer scenarious]"</td>
 <td></td>
-<td>0</td>
-<td>Runner.Runner@2ea41516</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I am scenariou B", "Optional[Testing the transfer scenarious]"</td>
-<td></td>
-<td>0</td>
-<td>Runner.Runner@2ea41516</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I am scenariou C", "Optional[Testing the transfer scenarious]"</td>
-<td></td>
-<td>0</td>
-<td>Runner.Runner@2ea41516</td></tr>
+<td>7</td>
+<td>Runner.Runner@729d991e</td></tr>
 </table><p>
 </body>
 </html>

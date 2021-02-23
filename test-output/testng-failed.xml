@@ -5,9 +5,10 @@
     <classes>
       <class name="Runner.Runner">
         <methods>
+          <include name="afterSuite"/>
           <include name="CreateDriver"/>
           <include name="tearDownClass"/>
-          <include name="runScenario"/>
+          <include name="runScenario" invocation-numbers="1 2"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- Runner.Runner -->
