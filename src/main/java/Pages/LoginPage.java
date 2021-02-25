@@ -18,6 +18,9 @@ public class LoginPage extends DriverManager {
 	@FindBy(xpath = "//*[starts-with(text(),'Login')]")
 	WebElement login;
 
+	@FindBy(xpath = "//*[starts-with(text(),'Forgot your password')]")
+	WebElement forgotPassword;
+	
 	public LoginPage() {
 		PageFactory.initElements(webDriver.get(), this);
 	}
@@ -29,4 +32,7 @@ public class LoginPage extends DriverManager {
 		return new DashboardPage();
 	}
 
+	public void clickOnForgotPassword() {
+		Util.click(forgotPassword);
+	}
 }

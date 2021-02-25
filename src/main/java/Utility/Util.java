@@ -15,7 +15,7 @@ public class Util extends DriverManager {
 
 	static FileReader reader;
 	static Properties p;
-
+	
 	public static byte[] takeScreenShot() {
 		return ((TakesScreenshot) webDriver.get()).getScreenshotAs(OutputType.BYTES);
 	}
@@ -45,4 +45,7 @@ public class Util extends DriverManager {
 		element.click();
 	}
 
+	public static String getURL() {
+		return webDriver.get().getCurrentUrl();
+	}
 }

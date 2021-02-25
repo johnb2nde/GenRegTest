@@ -1,72 +1,43 @@
 package stepDef;
 
+import org.testng.Assert;
+
+import Base.DriverManager;
 import Pages.LoginPage;
 import Pages.PreLoginPage;
+import Utility.Util;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-public class StepDef {
+public class StepDef extends DriverManager{
 
-	@Given("I want to write a step with precondition")
-	public void i_want_to_write_a_step_with_precondition() {
-		PreLoginPage prelogin = new PreLoginPage();
-		prelogin.clickOnLoginButton();
+	@Then("^Login page is displayed$")
+	public void login_page_is_displayed() throws Throwable {
+		Assert.assertEquals(Util.getURL(), "https://ui.cogmento.com/");
 	}
 
-	@Given("some other precondition")
-	public void some_other_precondition() {
+	@And("^Enter the email and password and click on submit$")
+	public void enter_the_email_and_password_and_click_on_submit() throws Throwable {
 		LoginPage login = new LoginPage();
-		login.Login("abc", "test1234");
+		login.Login("abc", "1234");
+	}
+	
+	@Given("^User is on the CRM website$")
+	public void user_is_on_the_crm_website() throws Throwable {
+		Assert.assertEquals(Util.getURL(), Util.properties("config", "Applink"));
 	}
 
-	@When("I complete action")
-	public void i_complete_action() {
-
-	}
-
-	@When("some other action")
-	public void some_other_action() {
-
-	}
-
-	@When("yet another action")
-	public void yet_another_action() {
-
-	}
-
-	@Then("I validate the outcomes")
-	public void i_validate_the_outcomes() {
+	@When("^User clicks on Login button in the pre login page$")
+    public void user_clicks_on_login_button_in_the_pre_login_page() throws Throwable {
+    	PreLoginPage p = new PreLoginPage();
+    	p.clickOnLoginButton();
+    }
+	
+	@Then("^Dashboard page is displayed$")
+	public void dashboard_page_is_displayed() throws Throwable {
 
 	}
 
-	@Then("check more outcomes")
-	public void check_more_outcomes() {
-
-	}
-
-	@Given("I want to write a step with name1")
-	public void i_want_to_write_a_step_with_name1() {
-
-	}
-
-	@When("I check for the {int} in step")
-	public void i_check_for_the_in_step(Integer int1) {
-
-	}
-
-	@Then("I verify the success in step")
-	public void i_verify_the_success_in_step() {
-
-	}
-
-	@Given("I want to write a step with name2")
-	public void i_want_to_write_a_step_with_name2() {
-
-	}
-
-	@Then("I verify the Fail in step")
-	public void i_verify_the_fail_in_step() {
-
-	}
 }

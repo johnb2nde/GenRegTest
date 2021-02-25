@@ -20,5 +20,4 @@ public class PreLoginPage extends DriverManager {
 		Util.click(LoginButton);
 		return new LoginPage();
 	}
-
 }

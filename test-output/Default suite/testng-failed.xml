@@ -6,10 +6,10 @@
       <class name="Runner.Runner">
         <methods>
           <include name="afterSuite"/>
-          <include name="CreateDriver"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="1 2"/>
+          <include name="runScenario"/>
           <include name="setUpClass"/>
+          <include name="initilise"/>
         </methods>
       </class> <!-- Runner.Runner -->
     </classes>
