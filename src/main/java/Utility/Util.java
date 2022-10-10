@@ -35,10 +35,14 @@ public class Util extends DriverManager {
 		}
 		return propValue;
 	}
-
+	public static void clear(WebElement element) {
+		element.click();
+		element.clear();
+	}
 	public static void sendText(WebElement element, String value) {
 		element.click();
 		element.sendKeys(value);
+		
 	}
 
 	public static void click(WebElement element) {

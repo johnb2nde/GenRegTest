@@ -9,7 +9,7 @@ import Utility.Util;
 
 public class PreLoginPage extends DriverManager {
 
-	@FindBy(xpath = "//*[contains(text(),'Log In')]")
+	@FindBy(xpath = "//a[normalize-space()='TEST Login']")
 	WebElement LoginButton;
 
 	public PreLoginPage() {

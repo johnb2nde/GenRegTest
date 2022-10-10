@@ -12,7 +12,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DriverManager {
 
 	public static ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
-			
+
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public static void CreateDriver() {
 		WebDriverManager.chromedriver().setup();

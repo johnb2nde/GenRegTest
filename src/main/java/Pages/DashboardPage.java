@@ -22,8 +22,12 @@ public class DashboardPage extends DriverManager {
 		PageFactory.initElements(webDriver.get(), this);
 	}
 
-	public void Login(String userName, String passWord) {
+	public void enterEmail(String userName) {
 		Util.sendText(username, userName);
+		Util.click(submit);
+	}
+
+	public void enterPass(String passWord) {
 		Util.sendText(password, passWord);
 		Util.click(submit);
 	}

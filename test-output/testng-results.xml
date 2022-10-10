@@ -1,85 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-25T13:43:37 IST" name="Suite" finished-at="2021-02-25T13:44:45 IST" duration-ms="67372">
+  <suite started-at="2022-10-10T13:47:19 EDT" name="Default suite" finished-at="2022-10-10T13:50:51 EDT" duration-ms="211428">
     <groups>
       <group name="cucumber">
-        <method signature="CutomizeTestNGCucmberRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@7bab3f1a]" name="runScenario" class="Base.CutomizeTestNGCucmberRunner"/>
-        <method signature="CutomizeTestNGCucmberRunner.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Run@121314f7]" name="runScenario" class="Base.CutomizeTestNGCucmberRunner"/>
+        <method signature="CutomizeTestNGCucmberRunner.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@14cd1699]" name="runScenario" class="Base.CutomizeTestNGCucmberRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-02-25T13:43:37 IST" name="Test" finished-at="2021-02-25T13:44:42 IST" duration-ms="64495">
+    <test started-at="2022-10-10T13:47:19 EDT" name="Default test" finished-at="2022-10-10T13:50:51 EDT" duration-ms="211428">
       <class name="Runner.Runner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.Runner@7bab3f1a]" started-at="2021-02-25T13:43:37 IST" name="setUpClass" finished-at="2021-02-25T13:43:40 IST" duration-ms="2348" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:47:19 EDT" name="setUpClass" finished-at="2022-10-10T13:47:22 EDT" duration-ms="3117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="CreateDriver()[pri:0, instance:Runner.Runner@7bab3f1a]" started-at="2021-02-25T13:43:40 IST" name="CreateDriver" finished-at="2021-02-25T13:44:18 IST" duration-ms="38176" status="PASS">
+        <test-method is-config="true" signature="CreateDriver()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:47:23 EDT" name="CreateDriver" finished-at="2022-10-10T13:47:42 EDT" duration-ms="19764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateDriver -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@7bab3f1a]" started-at="2021-02-25T13:44:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-25T13:44:32 IST" duration-ms="13705" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:47:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-10T13:48:54 EDT" duration-ms="71802" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["I am from different feature"]]>
+                <![CDATA["Login with valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Testing the transfer scenarious]"]]>
+                <![CDATA["Login Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runner.Runner@7bab3f1a]" started-at="2021-02-25T13:44:32 IST" name="afterSuite" finished-at="2021-02-25T13:44:39 IST" duration-ms="7497" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:48:54 EDT" name="afterSuite" finished-at="2022-10-10T13:48:57 EDT" duration-ms="2616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.Runner@7bab3f1a]" started-at="2021-02-25T13:44:39 IST" name="tearDownClass" finished-at="2021-02-25T13:44:42 IST" duration-ms="2695" status="PASS">
+        <test-method is-config="true" signature="CreateDriver()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:48:57 EDT" name="CreateDriver" finished-at="2022-10-10T13:49:02 EDT" duration-ms="4863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDriver -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:49:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-10T13:49:50 EDT" duration-ms="48830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:49:50 EDT" name="afterSuite" finished-at="2022-10-10T13:49:53 EDT" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method is-config="true" signature="CreateDriver()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:49:53 EDT" name="CreateDriver" finished-at="2022-10-10T13:49:57 EDT" duration-ms="4734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateDriver -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:49:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-10T13:50:43 EDT" duration-ms="45899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:50:43 EDT" name="afterSuite" finished-at="2022-10-10T13:50:45 EDT" duration-ms="1336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.Runner@14cd1699]" started-at="2022-10-10T13:50:45 EDT" name="tearDownClass" finished-at="2022-10-10T13:50:51 EDT" duration-ms="6020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- Runner.Runner -->
-    </test> <!-- Test -->
-    <test started-at="2021-02-25T13:43:37 IST" name="Test1" finished-at="2021-02-25T13:44:45 IST" duration-ms="67372">
-      <class name="Runner.Run">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.Run@121314f7]" started-at="2021-02-25T13:43:37 IST" name="setUpClass" finished-at="2021-02-25T13:43:40 IST" duration-ms="2348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="CreateDriver()[pri:0, instance:Runner.Run@121314f7]" started-at="2021-02-25T13:43:40 IST" name="CreateDriver" finished-at="2021-02-25T13:44:17 IST" duration-ms="37315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateDriver -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.Run@121314f7]" started-at="2021-02-25T13:44:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-02-25T13:44:37 IST" duration-ms="19917" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["I am from different feature"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Testing the transfer scenarious]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Runner.Run@121314f7]" started-at="2021-02-25T13:44:37 IST" name="afterSuite" finished-at="2021-02-25T13:44:44 IST" duration-ms="7014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.Run@121314f7]" started-at="2021-02-25T13:44:44 IST" name="tearDownClass" finished-at="2021-02-25T13:44:45 IST" duration-ms="702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- Runner.Run -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
